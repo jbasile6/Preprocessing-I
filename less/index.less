@@ -49,11 +49,177 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+//Variables
+
+//MixIns
+.layout-center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.layout-center-wrap() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.custom-layout(@justify, @align) {
+	display: flex;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+//General Styling
 * {
     box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background-color: black;
+	font-size: 62.5%;
 }
+//End General Styling
+
+.container-all {
+	background-color: white;
+	order:5;
+	max-width:1000px;
+	width:100%;
+	height:auto;
+	margin: 0 auto;
+	line-height: 1.25;
+	padding:20px;
+	
+
+	span {
+		font-weight: bold;
+	}
+
+	h2 {
+		font-size:1.8rem;
+		text-decoration: underline;
+	}
+	
+
+	div.summary-top-img {
+		height: 150px;
+		width:100%;
+		background: grey;
+		font-size: 2rem;
+	}
+
+	div {
+		
+		padding:20px;
+	}
+	
+	section {
+		
+		padding:20 0px;
+	}
+
+	.box {
+		font-size:1.5rem;
+	}
+
+	div.body-top {
+		.layout-center();
+		border-bottom: 1px dashed black;
+
+		.education{
+
+		}
+
+		.professional-summary{
+
+		}
+	}
+
+	.work-history-content{
+			.layout-center();
+			
+		}
+
+	.work-history-left, .work-history-center, .work-history-right {
+		height:450px;
+		width: 31%;
+	}
+	
+
+	div.work-history-top{
+		.layout-center();
+		
+		border-bottom:1px dashed black;
+	}
+
+	div.skills-add-info{
+		border-top: 1px dashed black;
+
+		h2 {
+			font-size:1.6rem;
+		}
+
+	
+	
+
+		
+
+		ul{
+			padding-left:30px;
+			display:grid;
+			grid-template-columns: auto 100px 1fr;
+			
+		}
+
+	}
+
+	footer{
+		display:flex;
+		flex-wrap:nowrap;
+		justify-content: center;
+		border-top:1px dashed black;
+		
+	}
+
+	.footer-right, .footer-left{
+		width: 48%;
+		font-size:1.5rem;
+	}
+
+	
+}
+
+.header-all {
+	
+	.header-top {
+		.layout-center;
+		font-size: 3rem;
+		font-weight: bold;
+		padding:3%;
+		border-bottom: 5px double black;
+	}
+
+	.header-bottom {
+		font-size: 1.6rem; 
+		border-bottom: 5px double black;
+
+		.header-nav {
+			.custom-layout(space-evenly,center);
+			
+
+			a {
+				font-color:black;
+				font-weight: bold;
+				text-decoration: none;
+			}
+		}
+	}
+	
+}
+
+
+
 

@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
@@ -14,6 +15,184 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <!--"container-all" is the same on each HTML file-->
+  <div class="container-all">
+    <header>
+      <section class="header-all">
+        <div class="header-top">
+          <h1>James Basile's Resume</h1>
+        </div>
+        <div class="header-bottom">
+          <nav class="header-nav">
+            <a href="index.html">Professional Summary</a>
+            <p>-</p>
+            <a href="#">Education</a>
+            <p>-</p>
+            <a href="#">Work History</a>
+            <p>-</p>
+            <a href="#">Skills/Additional Information</a>
+            <p>-</p>
+            <a href="#">Print Resume</a>
+          </nav>
+        </div>
+      </section>
+    </header>
+    <!-- header image below nav-->
+    <div class="summary-top-img">
+      <p>THIS SHOULD BE AN IMAGE</p>
+      <img src="#" alt="header image">
+    </div>
+
+    <!--Body content begins-->
+
+    <!-- On Final edition, each box nav tab will be its own
+    page rather than haveing all four sections on one page
+    Print Resume tab should open a print view version of page-->
+
+    <!--<section class="summary-body-all">
+      <div class="box summary-body-left">
+        <h2>Professional Summary</h2>
+      </div>
+      <div class="box summary-body-right">
+
+
+      </div>
+                  -->
+
+    <!-- This section is just for completing MVP,
+        Eventually each will get its own page linked to nav bar-->
+    <section class="body-content">
+      <div class="body-top">
+        <!--span used to bold the font-->
+        <div class="box education">
+          <h2>Education</h2>
+          <p><span>Bachelor of Science</span>: Business Administration, Concentration in Finance, Gabelli School Of
+            Business, 2017<br />
+            <span>Fordham University</span> - Bronx, NY</p>
+        </div>
+
+        <div class="box professional-summary">
+          <h2>Professional Summary</h2>
+          <p>Professional with 2 years in financial services gifted at lead
+            generation and efficiently resolving customer issues. Engaging and personable with the ability to increase
+            business opportunities through dynamic marketing strategies, effective communication skills and a
+            dedication
+            to customer service. Seeking to further my education and create new opportunities for myself as an
+            individual
+            and as a professional.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="box work-history-top">
+        <h2>Work History</h2>
+      </div>
+
+      <div class="work-history-content">
+        <div class="box work-history-left">
+          <h3><span>Account Executive</span>, 03/2018-Present<br />
+            <span>Primary Financial Corp.</span> – Blue Bell, PA</h3>
+          <ul>
+            <li>• Identified new business opportunities through cold calling, networking, and marketing.</li>
+            <li>• Built and cultivated a healthy pipeline of customers that was interested in partnering with the
+              company.</li>
+            <li>• Delivered a high level of service to clients to both maintain and extend the relationships for future
+              business opportunities.</li>
+            <li>• Achieved 115% of initial sales quota for the first six months with the company.</li>
+          </ul>
+        </div>
+
+
+        <div class="box work-history-center">
+          <h3><span>Lending Specialist</span>, 08/2017 to 05/2018<br />
+            <span>Spring EQ</span> – Philadelphia, PA</h3>
+          <ul>
+            <li>• Worked as both an outbound sales telemarketer for the sales team and loan processor for processing
+              team.</li>
+            <li>• Generated over 500 applications through outbound sales calls.</li>
+            <li>• Contacted prospective applicants regarding loan needs and financial histories, and conveyed
+              information
+              regarding the application processes.</li>
+            <li>• Assisted in overseeing mortgage loans from approval to funding.</li>
+            <li>• Contacted and worked with approved mortgage loan applicants, collected legal documents, and ordered
+              property appraisals.</li>
+            <li>• Collaborated with the compliance department to prevent procedural errors.</li>
+            <li>• Studied and learned materials for Mortgage Loan Originator License Exam after hours.</li>
+          </ul>
+        </div>
+
+
+        <div class="box work-history-left">
+          <h3><span>Cahsier</span>, 03/2013 to 08/2016 <br />
+            <span>Affamato's Italian Restaurant</span> – Norristown, PA</h3>
+          <ul>
+            <li>• Engaged customers warmly and provided immediate and dedicated assistance.</li>
+            <li>• Processed payments by check, cash, debit and credit and maintained accurate drawers.</li>
+          </ul>
+          <br />
+          <h3><span>Lifeguard</span>, 04/2012 to 08/2016 <br />
+            <span>Ambler YMCA</span>– Ambler, PA</h3>
+          <ul>
+            <li>• Maintained surveillance and responded to emergency situations.</li>
+            <li>• Maintained records required by state agencies.</li>
+            <li>• Garnered valuable swim instruction to patrons of various ages to build confidence, strength, and
+              skills
+              in a positive learning environment.</li>
+            <li>• Ensured compliance with pool policies and procedures.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box skills-add-info">
+
+        <h2>Skills/Additional Information</h2>
+        <br/>
+        <h3>Proficient In:</h3>
+          <ul>
+            <li>-HTML5</li>
+            <li>-CSS3</li>
+            <li>-JavaScript</li>
+            <li>-MS Excel</li>
+            <li>-MS Access</li>
+          </ul>
+          <br/>
+          <h3>Other Skills:</h3>
+          <ul class="other-skills">
+            <li>-Relationship building and management</li>
+            <li>-Verbal/written communication</li>
+            <li>-Strong interpersonal skills</li>
+            <li>-Detail-oriented</li>
+          </ul>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-left">
+        <p>Looking for my Github profile?</p>
+        <a href="https://github.com/jbasile6" class="button large icon fa-github">James' Github</a>
+        <br />
+        <br />
+        <br />
+        <p>Add me on LinkedIn!</p>
+        <a href="https://www.linkedin.com/in/james-basile-72327b109" class="icon fa-linkedin">James'
+          LinkedIn</a>
+      </div>
+      <div class="footer-right">
+        <h3>Contact Me!</h3>
+
+        <ul>
+          <li><span>Address:</span><br/>
+          1461 Knightsbridge Drive<br/> Blue Bell, PA 19422</li>
+          <li><span>Email:</span><br/>
+          JBasile145@gmail.com</li>
+          <li><span>Phone Number:</span><br/>
+          (610) 945-4092</li>
+        </ul>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
